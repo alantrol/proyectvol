@@ -3,10 +3,10 @@ const { Sequelize, DataTypes } = require('sequelize');
 
 
 // Option 3: Passing parameters separately (other dialects)
-const sequelize = new Sequelize('archivos', 'root', '', {
+const sequelize = new Sequelize('linsol', 'postgres', '1234', {
     host: 'localhost',
-    port:3306,
-    dialect:'mysql'/* one of 'mysql' | 'postgres' | 'sqlite' | 'mariadb' | 'mssql' | 'db2' | 'snowflake' | 'oracle' */
+    port:5432,
+    dialect:'postgres'/* one of 'mysql' | 'postgres' | 'sqlite' | 'mariadb' | 'mssql' | 'db2' | 'snowflake' | 'oracle' */
   });
 
   const Usuario =sequelize.define("Usuario",{

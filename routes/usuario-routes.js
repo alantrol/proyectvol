@@ -1,9 +1,9 @@
 const express =require("express")
 
-const router=express. router()
+const router=express.Router()
 const {listarUsuario,crearUsuario,actualizarUsuario,eliminarUsuario}= require("./../controllers/usuario-controllers")
 
-router.Post("/crear",crearUsuario)
+router.post("/crear",crearUsuario)
 
 router.put("/actualizar",actualizarUsuario)
 
